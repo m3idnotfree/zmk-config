@@ -1,0 +1,25 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |   ESC   |    Q    |    W    |    E    |    R    |    T    |                                          |    Y    |    U    |    I    |    O    |    P    |    \    |
+// |   TAB   |    A    |    S    |    D    |    F    |    G    |                                          |    H    |    J    |    K    |    L    |    ;    |    '    |
+// |  SHIFT  |    Z    |    X    |    C    |    V    |    B    | CTRL+A  | CTRL+C  |  |  CTRL+V |  CTRL+X |    N    |    M    |    ,    |    .    |    /    |  R CTRL |
+//                               |   GUI   |   DEL   | RETURN  |  SPACE  | ESCAPE  |  |  RETURN |  SPACE  |   TAB   |   BSPC  |  R ALT  |
+            bindings = <
+    &kp A    &kp B    &kp C    &kp D     &kp E     &kp F    &kp G     &kp H     &kp I     &kp J     &kp K    &kp L &kp M
+    &kp N    &kp O    &kp P    &kp Q     &kp R     &kp S    &kp T     &kp U     &kp V     &kp X     &kp Y    &kp Z &kp 1
+    &kp 2    &kp 3    &kp 4    &kp 5     &kp 6     &kp 7    &kp 8     &kp 9     &kp COMMA     &kp DOT     &kp FSLH    &kp BSLH &kp SEMI
+    &kp SQT    &kp ESC    &kp TAB    &kp LSHIFT     &kp LGUI     &kp DEL    &kp RET     &kp SPACE     &kp RCTRL     &kp RALT     &kp SPACE    &kp L &kp M
+
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
+    };
+};
