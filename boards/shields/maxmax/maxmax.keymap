@@ -18,8 +18,6 @@
     &kp SQT    &kp ESC    &kp TAB    &kp LSHIFT     &kp LGUI     &kp DEL    &kp RET     &kp SPACE     &kp RCTRL     &kp RALT     &kp SPACE    &kp L &kp M
 
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
