@@ -5,17 +5,18 @@
 
 / {
   behaviors {
-    td6: BT0_DISC0 {
+    td1: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp N1>, <&bt BT_SEL 0>, <&bt BT_DISC 0>;
         };
-    td7: N3_je {
+
+    td2: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp N3>, <&bt J>, <&bt E>;
+            bindings = <&kp N1>, <&kp N2>, <&kp N3>;
         };
   }
 
@@ -26,7 +27,7 @@
           bindings = <
             &kp N7 &kp N8 &kp N9
             &kp N4 &kp N5 &kp N6
-            &td6   &kp N2 &tb7
+            &td1   &kp N2 &tb2
           >;
       };
   };
