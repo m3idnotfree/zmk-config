@@ -11,13 +11,12 @@
             tapping-term-ms = <200>;
             bindings = <&kp N1>, <&bt BT_SEL 0>, <&bt BT_DISC 0>;
         };
-      td7: td_3orj {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp N3>, <&kp J>;
-      };
-
+    td7: BT0_DISC0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N3>, <&bt J>, <&bt E>;
+        };
   }
 
   keymap {
