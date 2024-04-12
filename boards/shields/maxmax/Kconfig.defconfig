@@ -2,5 +2,4 @@ if SHIELD_MAXMAX
 
 config ZMK_KEYBOARD_NAME
     default "maxmax"
-
 endif
